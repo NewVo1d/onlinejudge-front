@@ -4,7 +4,7 @@
 
 ```
 // 初始化项目
-yarn install
+yarn
 
 // 开发模式
 yarn dev
