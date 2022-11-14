@@ -1,4 +1,5 @@
 import { Nav } from '@douyinfe/semi-ui';
+import { useNavigate, useLocation } from 'oh-router-react';
 import {
   IconHomeStroked,
   IconChecklistStroked,
@@ -8,9 +9,9 @@ import {
   IconCandlestickChartStroked,
 } from '@douyinfe/semi-icons';
 import Footer from './footer';
-import { useNavigate } from 'oh-router-react';
 
 function PageHeader() {
+  const location = useLocation();
   const navigate = useNavigate();
 
   const navHeader = {
@@ -60,6 +61,8 @@ function PageHeader() {
   return (
     <div>
       <Nav
+        defaultSelectedKeys={['home']}
+        selectedKeys={[location.pathname.slice(1)]}
         mode={'horizontal'}
         header={navHeader}
         items={navItems}
