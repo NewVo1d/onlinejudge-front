@@ -1,33 +1,45 @@
-import { Button, Avatar, Dropdown } from '@douyinfe/semi-ui';
+import { IconMoon, IconSun } from '@douyinfe/semi-icons';
+import { Button, Avatar, Dropdown, Space } from '@douyinfe/semi-ui';
+import { useState } from 'react';
+import './styles/index.css';
 
 function Footer() {
+  const [icon, setIcon] = useState(<IconSun className="footer-icon-color" />);
   const switchMode = () => {
     const body = document.body;
     if (body.hasAttribute('theme-mode')) {
+      setIcon(<IconSun className="footer-icon-color" />);
       body.removeAttribute('theme-mode');
     } else {
+      setIcon(<IconMoon className="footer-icon-color" />);
       body.setAttribute('theme-mode', 'dark');
     }
   };
 
   return (
-    <Dropdown
-      position="bottomRight"
-      render={
-        <Dropdown.Menu>
-          <Dropdown.Item>Settings</Dropdown.Item>
-          <Dropdown.Item>Management</Dropdown.Item>
-        </Dropdown.Menu>
-      }
-    >
-      <Button onClick={switchMode}>Change</Button>
-      <Avatar
-        size="small"
-        color="light-blue"
+    <Space>
+      <Button
+        theme="borderless"
+        icon={icon}
+        onClick={switchMode}
+      ></Button>
+      <Dropdown
+        position="bottomRight"
+        render={
+          <Dropdown.Menu>
+            <Dropdown.Item>Settings</Dropdown.Item>
+            <Dropdown.Item>Management</Dropdown.Item>
+          </Dropdown.Menu>
+        }
       >
-        ND
-      </Avatar>
-    </Dropdown>
+        <Avatar
+          size="small"
+          color="light-blue"
+        >
+          ND
+        </Avatar>
+      </Dropdown>
+    </Space>
   );
 }
 
