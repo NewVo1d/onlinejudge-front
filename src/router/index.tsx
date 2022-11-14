@@ -6,11 +6,12 @@ import Status from '../pages/Status';
 import Rank from './../pages/Rank/index';
 import About from './../pages/About/index';
 import { PageLayout } from '../main';
+import NotFound from './../pages/NotFound/index';
 
 export const router = new Router({
   routes: [
     {
-      path: '',
+      path: '/',
       redirect: '/home',
       element: <PageLayout />,
       children: [
@@ -37,6 +38,10 @@ export const router = new Router({
         {
           path: '/about',
           element: <About />,
+        },
+        {
+          path: '/*',
+          element: <NotFound />,
         },
       ],
     },

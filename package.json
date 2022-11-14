@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@douyinfe/semi-illustrations": "^2.23.2",
     "@douyinfe/semi-ui": "^2.23.1",
     "oh-router": "^0.3.0",
     "oh-router-react": "^0.0.9",
