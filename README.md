@@ -10,5 +10,5 @@ yarn
 yarn dev
 
 // 构建
-yarn build
+yarn build 
 ```
