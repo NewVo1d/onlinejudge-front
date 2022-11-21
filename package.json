@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "@douyinfe/semi-illustrations": "^2.23.2",
-    "@douyinfe/semi-ui": "^2.23.1",
+    "@douyinfe/semi-ui": "^2.23.5",
     "oh-router": "^0.3.0",
     "oh-router-react": "^0.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
     "reset-css": "^5.0.1"
   },
   "devDependencies": {
@@ -23,5 +24,17 @@
     "@vitejs/plugin-react": "^2.2.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
-  }
+  },
+  "description": "## 快速开始",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smelly-pig/onlinejudge-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smelly-pig/onlinejudge-front/issues"
+  },
+  "homepage": "https://github.com/smelly-pig/onlinejudge-front#readme"
 }
