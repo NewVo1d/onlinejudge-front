@@ -6,7 +6,7 @@ import {
   IconPrizeStroked,
   IconLightningStroked,
   IconIssueStroked,
-  IconCandlestickChartStroked,
+  IconCandlestickChartStroked
 } from '@douyinfe/semi-icons';
 import Footer from './footer';
 
@@ -16,7 +16,7 @@ function PageHeader() {
 
   const navHeader = {
     logo: <img src="/logo.svg" />,
-    text: 'Online Judge',
+    text: 'Online Judge'
   };
 
   const navItems = [
@@ -24,38 +24,38 @@ function PageHeader() {
       itemKey: 'home',
       text: 'Home',
       icon: <IconHomeStroked />,
-      onClick: () => navigate('/home'),
+      onClick: () => navigate('/home')
     },
     {
       itemKey: 'problem',
       text: 'Problem',
       icon: <IconChecklistStroked />,
-      onClick: () => navigate('/problem'),
+      onClick: () => navigate('/problem')
     },
     {
       itemKey: 'contest',
       text: 'Contest',
       icon: <IconPrizeStroked />,
-      onClick: () => navigate('/contest'),
+      onClick: () => navigate('/contest')
     },
     {
       itemKey: 'status',
       text: 'Status',
       icon: <IconLightningStroked />,
-      onClick: () => navigate('/status'),
+      onClick: () => navigate('/status')
     },
     {
       itemKey: 'rank',
       text: 'Rank',
       icon: <IconCandlestickChartStroked />,
-      onClick: () => navigate('/rank'),
+      onClick: () => navigate('/rank')
     },
     {
       itemKey: 'about',
       text: 'About',
       icon: <IconIssueStroked />,
-      onClick: () => navigate('/about'),
-    },
+      onClick: () => navigate('/about')
+    }
   ];
 
   return (
