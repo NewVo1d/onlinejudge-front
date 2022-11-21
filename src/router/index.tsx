@@ -17,33 +17,33 @@ export const router = new Router({
       children: [
         {
           path: '/home',
-          element: <Home />,
+          element: <Home />
         },
         {
           path: '/problem',
-          element: <Problem />,
+          element: <Problem />
         },
         {
           path: '/contest',
-          element: <Contest />,
+          element: <Contest />
         },
         {
           path: '/status',
-          element: <Status />,
+          element: <Status />
         },
         {
           path: '/rank',
-          element: <Rank />,
+          element: <Rank />
         },
         {
           path: '/about',
-          element: <About />,
+          element: <About />
         },
         {
           path: '/*',
-          element: <NotFound />,
-        },
-      ],
-    },
-  ],
+          element: <NotFound />
+        }
+      ]
+    }
+  ]
 });

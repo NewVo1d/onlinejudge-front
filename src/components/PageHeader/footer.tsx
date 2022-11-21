@@ -18,11 +18,7 @@ function Footer() {
 
   return (
     <Space>
-      <Button
-        theme="borderless"
-        icon={icon}
-        onClick={switchMode}
-      ></Button>
+      <Button theme="borderless" icon={icon} onClick={switchMode}></Button>
       <Dropdown
         position="bottomRight"
         render={
@@ -32,10 +28,7 @@ function Footer() {
           </Dropdown.Menu>
         }
       >
-        <Avatar
-          size="small"
-          color="light-blue"
-        >
+        <Avatar size="small" color="light-blue">
           ND
         </Avatar>
       </Dropdown>

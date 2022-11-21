@@ -11,10 +11,7 @@ const Description = () => {
   const [time, setTime] = useState(3);
   count(time, setTime);
   return (
-    <Space
-      vertical={true}
-      spacing={'medium'}
-    >
+    <Space vertical={true} spacing={'medium'}>
       <Typography.Title heading={3}>页面404</Typography.Title>
       <Typography.Text link={{ href: '/' }}>{time}s后返回首页</Typography.Text>
     </Space>

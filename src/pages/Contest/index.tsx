@@ -5,10 +5,7 @@ function Contest() {
   return (
     <PageContent>
       <Row>
-        <Col
-          span={20}
-          offset={2}
-        >
+        <Col span={20} offset={2}>
           <Card title="Contests">1</Card>
         </Col>
       </Row>

@@ -5,10 +5,7 @@ function About() {
   return (
     <PageContent>
       <Row>
-        <Col
-          span={20}
-          offset={2}
-        >
+        <Col span={20} offset={2}>
           <Card title="About">1</Card>
         </Col>
       </Row>
