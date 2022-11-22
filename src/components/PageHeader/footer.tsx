@@ -26,8 +26,7 @@ function Footer() {
             <Dropdown.Item>Settings</Dropdown.Item>
             <Dropdown.Item>Management</Dropdown.Item>
           </Dropdown.Menu>
-        }
-      >
+        }>
         <Avatar size="small" color="light-blue">
           ND
         </Avatar>
