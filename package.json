@@ -14,6 +14,7 @@
   "dependencies": {
     "@douyinfe/semi-illustrations": "^2.23.2",
     "@douyinfe/semi-ui": "^2.23.1",
+    "ahooks": "^3.7.2",
     "oh-router": "^0.3.0",
     "oh-router-react": "^0.0.9",
     "react": "^18.2.0",
