@@ -66,8 +66,7 @@ function PageHeader() {
         mode={'horizontal'}
         header={navHeader}
         items={navItems}
-        footer={<Footer />}
-      ></Nav>
+        footer={<Footer />}></Nav>
     </div>
   );
 }
