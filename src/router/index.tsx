@@ -7,8 +7,11 @@ import Rank from './../pages/Rank/index';
 import About from './../pages/About/index';
 import { PageLayout } from '../main';
 import NotFound from './../pages/NotFound/index';
+import { LoginCheckMiddleware } from './middlewares/LoginCheck';
+import Login from './../pages/Login/index';
 
 export const router = new Router({
+  middlewares: [new LoginCheckMiddleware()],
   routes: [
     {
       path: '/',
@@ -40,10 +43,14 @@ export const router = new Router({
           element: <About />
         },
         {
-          path: '/*',
+          path: '*',
           element: <NotFound />
         }
       ]
+    },
+    {
+      path: '/login',
+      element: <Login />
     }
   ]
 });

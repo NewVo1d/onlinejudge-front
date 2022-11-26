@@ -2,7 +2,7 @@ import React from 'react';
 import { Empty } from '@douyinfe/semi-ui';
 import { IllustrationNotFound, IllustrationNotFoundDark } from '@douyinfe/semi-illustrations';
 import PageContent from '../../components/PageContent';
-import Description from './components/description';
+import Description from './description';
 
 const NotFound = () => {
   setTimeout(() => (window.location.href = '/'), 3000);
