@@ -2,6 +2,7 @@ import { IconMoon, IconSun } from '@douyinfe/semi-icons';
 import { Button, Avatar, Dropdown, Space } from '@douyinfe/semi-ui';
 import { useState } from 'react';
 import './styles/index.css';
+import { userStore } from './../../common/userStore';
 
 function Footer() {
   const [icon, setIcon] = useState(<IconSun className="footer-icon-color" />);
@@ -16,6 +17,10 @@ function Footer() {
     }
   };
 
+  const handlerLogOutClick = () => {
+    userStore.logout();
+  };
+
   return (
     <Space>
       <Button theme="borderless" icon={icon} onClick={switchMode}></Button>
@@ -25,6 +30,7 @@ function Footer() {
           <Dropdown.Menu>
             <Dropdown.Item>Settings</Dropdown.Item>
             <Dropdown.Item>Management</Dropdown.Item>
+            <Dropdown.Item onClick={handlerLogOutClick}>Logout</Dropdown.Item>
           </Dropdown.Menu>
         }>
         <Avatar size="small" color="light-blue">

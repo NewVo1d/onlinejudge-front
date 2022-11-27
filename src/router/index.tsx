@@ -9,9 +9,15 @@ import { PageLayout } from '../main';
 import NotFound from './../pages/NotFound/index';
 import { LoginCheckMiddleware } from './middlewares/LoginCheck';
 import Login from './../pages/Login/index';
+import { RoleCheckMiddleware } from './middlewares/RoleCheck';
+import { UserInfoMiddleware } from './middlewares/UserInfo';
+
+export interface Meta {
+  role: ('user' | 'admin' | 'superAdmin')[];
+}
 
 export const router = new Router({
-  middlewares: [new LoginCheckMiddleware()],
+  middlewares: [new LoginCheckMiddleware(), new UserInfoMiddleware(), new RoleCheckMiddleware()],
   routes: [
     {
       path: '/',

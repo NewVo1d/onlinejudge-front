@@ -21,4 +21,8 @@ export class LoginCheckMiddleware extends Middleware {
       router.navigate('/login');
     }
   }
+
+  register(ctx: MiddlewareContext<{}>): boolean {
+    return ctx.to.pathname.split('/').length > 2;
+  }
 }
