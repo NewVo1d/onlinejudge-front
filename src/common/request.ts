@@ -3,7 +3,7 @@ import axios from 'axios';
 import { getToken } from './token';
 
 export const request = axios.create({
-  baseURL: 'http://127.0.0.1:7001/api'
+  baseURL: 'http://124.220.182.218:7001/api'
 });
 
 request.interceptors.request.use((config) => {
