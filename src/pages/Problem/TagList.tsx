@@ -1,11 +1,12 @@
 import React from 'react';
-import { Card, Typography, Space, Divider, Button, Notification } from '@douyinfe/semi-ui';
+import { Card, Space, Divider, Button, Notification } from '@douyinfe/semi-ui';
 import { IconSync } from '@douyinfe/semi-icons';
 import TagButton from './../../components/TagButton/index';
 import './styles/tagList.css';
 import { useMemoizedFn } from 'ahooks';
+import CardTitle from './../../components/CardTitle/index';
 
-const TABLETITLE = 'Tags';
+const CARDTITLE = 'Tags';
 
 const tags = [
   'DP',
@@ -30,11 +31,6 @@ const tags = [
   'Graph'
 ];
 
-const TableTitle = () => {
-  const { Title } = Typography;
-  return <Title heading={5}>{TABLETITLE}</Title>;
-};
-
 const TagList = () => {
   const handlerButtonClick = useMemoizedFn(() => {
     Notification.open({
@@ -46,7 +42,7 @@ const TagList = () => {
   });
 
   return (
-    <Card title={<TableTitle />}>
+    <Card title={<CardTitle>{CARDTITLE}</CardTitle>}>
       <Space wrap>
         {tags.map((tag) => (
           <TagButton key={tag} tag={tag} />
