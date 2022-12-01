@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Table } from '@douyinfe/semi-ui';
-import TagButton from '../../components/TagButton';
-import LevelButton from './../../components/LevelButton/index';
 import HeaderExtra from './HeaderExtra';
 import { useMemoizedFn } from 'ahooks';
-import CardTitle from '../../components/CardTitle';
+import CardTitle from '../../../components/CardTitle';
+import LevelButton from '../../../components/LevelButton';
+import TagButton from '../../../components/TagButton';
 
 const PAGESIZE = 10;
 const CARDTITLE = 'Problems';

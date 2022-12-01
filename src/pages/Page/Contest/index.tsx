@@ -1,5 +1,5 @@
 import { Col, Row } from '@douyinfe/semi-ui';
-import PageContent from '../../components/PageContent';
+import PageContent from '../../../components/PageLayout/components/PageContent';
 import ContestList from './ContestList';
 
 function Contest() {
