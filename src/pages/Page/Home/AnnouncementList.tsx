@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Table, Button, Notification } from '@douyinfe/semi-ui';
 import { IconRefresh } from '@douyinfe/semi-icons';
-import CardTitle from '../../components/CardTitle';
 import { useMemoizedFn } from 'ahooks';
+import CardTitle from '../../../components/CardTitle';
 
 const PAGESIZE = 10;
-const CARDTITLE = 'Contests';
-const EMPTYCONTENT = 'No Contest Yet';
+const CARDTITLE = 'Announcements';
+const EMPTYCONTENT = 'No Announcement Yet';
 
 const getData = () => {
   const data = [];
@@ -22,7 +22,7 @@ const getData = () => {
 
 const data = getData();
 
-const ContestList = () => {
+const AnnouncementList = () => {
   const { Column } = Table;
   const [loading, setLoading] = useState(false);
   const [dataSource, setDataSource] = useState([]);
@@ -83,14 +83,12 @@ const ContestList = () => {
         loading={loading}
         showHeader={false}
         empty={EMPTYCONTENT}>
-        <Column key="id" dataIndex="id" width={1}></Column>
         <Column key="title" dataIndex="title" width={200}></Column>
-        <Column key="begintime" dataIndex="begintime" width={1}></Column>
-        <Column key="length" dataIndex="length" width={1}></Column>
         <Column key="owner" dataIndex="owner" width={1}></Column>
+        <Column key="updatetime" dataIndex="updatetime" width={1}></Column>
       </Table>
     </Card>
   );
 };
 
-export default ContestList;
+export default AnnouncementList;

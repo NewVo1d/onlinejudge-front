@@ -1,5 +1,5 @@
-import PageContent from '../../components/PageContent';
 import { Col, Row } from '@douyinfe/semi-ui';
+import PageContent from '../../../components/PageLayout/components/PageContent';
 import AnnouncementList from './AnnouncementList';
 
 function Home() {

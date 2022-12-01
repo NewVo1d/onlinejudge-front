@@ -1,8 +1,8 @@
 import { IconMoon, IconSun } from '@douyinfe/semi-icons';
 import { Button, Avatar, Dropdown, Space } from '@douyinfe/semi-ui';
 import { useState } from 'react';
+import { userStore } from '../../../../common/userStore';
 import './styles/index.css';
-import { userStore } from './../../common/userStore';
 
 function Footer() {
   const [icon, setIcon] = useState(<IconSun className="footer-icon-color" />);

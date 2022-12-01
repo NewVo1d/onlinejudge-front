@@ -1,10 +1,10 @@
 import React from 'react';
 import { Card, Space, Divider, Button, Notification } from '@douyinfe/semi-ui';
 import { IconSync } from '@douyinfe/semi-icons';
-import TagButton from './../../components/TagButton/index';
 import './styles/tagList.css';
 import { useMemoizedFn } from 'ahooks';
-import CardTitle from './../../components/CardTitle/index';
+import CardTitle from '../../../components/CardTitle';
+import TagButton from '../../../components/TagButton';
 
 const CARDTITLE = 'Tags';
 

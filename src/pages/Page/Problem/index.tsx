@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Row } from '@douyinfe/semi-ui';
-import PageContent from '../../components/PageContent';
 import ProblemList from './ProblemList';
 import TagList from './TagList';
+import PageContent from '../../../components/PageLayout/components/PageContent';
 
 function Problem() {
   return (
