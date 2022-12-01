@@ -32,9 +32,9 @@ const tags = [
 ];
 
 const TagList = () => {
-  const handlerButtonClick = useMemoizedFn(() => {
+  const handlerPickClick = useMemoizedFn(() => {
     Notification.open({
-      title: 'Hi, Bytedance',
+      title: 'You click the button',
       content: 'ies dance dance dance',
       duration: 3,
       position: 'top'
@@ -54,7 +54,7 @@ const TagList = () => {
         theme={'solid'}
         type={'secondary'}
         icon={<IconSync />}
-        onClick={handlerButtonClick}>
+        onClick={handlerPickClick}>
         Pick One
       </Button>
     </Card>

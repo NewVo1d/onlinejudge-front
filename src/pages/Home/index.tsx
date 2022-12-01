@@ -1,12 +1,13 @@
-import { Card, Col, Row } from '@douyinfe/semi-ui';
 import PageContent from '../../components/PageContent';
+import { Col, Row } from '@douyinfe/semi-ui';
+import AnnouncementList from './AnnouncementList';
 
 function Home() {
   return (
     <PageContent>
       <Row>
         <Col span={20} offset={2}>
-          <Card title="Announcements">1</Card>
+          <AnnouncementList />
         </Col>
       </Row>
     </PageContent>
