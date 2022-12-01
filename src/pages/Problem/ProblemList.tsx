@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Table, Typography } from '@douyinfe/semi-ui';
+import { Card, Table } from '@douyinfe/semi-ui';
 import TagButton from '../../components/TagButton';
 import LevelButton from './../../components/LevelButton/index';
 import HeaderExtra from './HeaderExtra';
 import { useMemoizedFn } from 'ahooks';
+import CardTitle from '../../components/CardTitle';
 
 const PAGESIZE = 10;
-const TABLETITLE = 'Problems';
+const CARDTITLE = 'Problems';
 
 const columns = [
   {
@@ -88,11 +89,6 @@ const getData = () => {
 
 const data = getData();
 
-const TableTitle = () => {
-  const { Title } = Typography;
-  return <Title heading={5}>{TABLETITLE}</Title>;
-};
-
 const ProblemList = () => {
   const [isTag, setIsTag] = useState(true);
   const [loading, setLoading] = useState(false);
@@ -124,7 +120,7 @@ const ProblemList = () => {
 
   return (
     <Card
-      title={<TableTitle />}
+      title={<CardTitle>{CARDTITLE}</CardTitle>}
       headerExtraContent={<HeaderExtra isTag={isTag} setIsTag={setIsTag} />}>
       <Table
         columns={isTag ? columns : columns_tag}
