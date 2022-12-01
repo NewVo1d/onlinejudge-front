@@ -1,16 +1,16 @@
 import { Card, Col, Row } from '@douyinfe/semi-ui';
-import PageContent from '../../components/PageContent';
+import PageContent from '../../../components/PageLayout/components/PageContent';
 
-function Rank() {
+function Status() {
   return (
     <PageContent>
       <Row>
         <Col span={20} offset={2}>
-          <Card title="Rank">1</Card>
+          <Card title="Status">1</Card>
         </Col>
       </Row>
     </PageContent>
   );
 }
 
-export default Rank;
+export default Status;

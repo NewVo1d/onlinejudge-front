@@ -1,4 +1,4 @@
-import PageContent from '../../components/PageContent';
+import PageContent from '../../../components/PageLayout/components/PageContent';
 import { Col, Row } from '@douyinfe/semi-ui';
 import AnnouncementList from './AnnouncementList';
 

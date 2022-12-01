@@ -1,16 +1,16 @@
 import { Router } from 'oh-router';
-import Contest from '../pages/Contest';
-import Home from '../pages/Home';
-import Problem from '../pages/Problem';
-import Status from '../pages/Status';
-import Rank from './../pages/Rank/index';
-import About from './../pages/About/index';
-import { PageLayout } from '../main';
+import Status from '../pages/Page/Status';
 import NotFound from './../pages/NotFound/index';
 import { LoginCheckMiddleware } from './middlewares/LoginCheck';
 import Login from './../pages/Login/index';
 import { RoleCheckMiddleware } from './middlewares/RoleCheck';
 import { UserInfoMiddleware } from './middlewares/UserInfo';
+import { PageLayout } from '../components/PageLayout';
+import About from '../pages/Page/About';
+import Contest from '../pages/Page/Contest';
+import Home from '../pages/Page/Home';
+import Problem from '../pages/Page/Problem';
+import Rank from '../pages/Page/Rank';
 
 export interface Meta {
   role: ('user' | 'admin' | 'superAdmin')[];

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Table, Button, Notification } from '@douyinfe/semi-ui';
 import { IconRefresh } from '@douyinfe/semi-icons';
-import CardTitle from '../../components/CardTitle';
 import { useMemoizedFn } from 'ahooks';
+import CardTitle from '../../../components/CardTitle';
 
 const PAGESIZE = 10;
 const CARDTITLE = 'Contests';
